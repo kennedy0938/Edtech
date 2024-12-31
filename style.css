@@ -1,0 +1,719 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif; /* Modern, readable font */
+    line-height: 1.6;
+    margin: 0;
+    color: #333; /* Dark gray text for better contrast */
+    background-color: #f8f8f8; /* Very light gray background */
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto Slab', serif; /* Strong, modern heading font */
+    font-weight: 700;
+    color: #222; /* Darker gray for headings */
+    line-height: 1.2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Prevents image from affecting line-height */
+    margin: 1rem auto; /* Center images */
+    border-radius: 8px; /* Slightly rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+a {
+    color: #007bff; /* Standard blue link color */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /*Sticks header to the top*/
+    top:0;
+    z-index: 100; /* ensures the header stays on top */
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+    display: flex; /* arranges nav items horizontally */
+    justify-content: center; /* centers the nav items */
+}
+nav li{
+    margin: 0 1rem; /* space between nav items */
+}
+
+/* Main Content Styles */
+main {
+    padding: 2rem;
+    max-width: 960px; /* Set a maximum width for larger screens */
+    margin: 2rem auto; /* Center the content */
+}
+
+section {
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+article {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee; /* Light gray separator between articles */
+}
+
+article:last-child {
+    border-bottom: none; /* Remove border on the last article */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design (Example) */
+@media (max-width: 768px) {
+    main {
+        padding: 1rem; /* Adjust padding on smaller screens */
+    }
+    nav ul{
+        flex-direction: column; /* makes nav items stack vertically */
+        align-items: center; /* centers the nav items */
+    }
+    nav li{
+        margin: 0.5rem 0; /* space between vertically stacked items */
+    }
+}
+/* Styling for the appraisal section */
+#school-appraisal {
+    margin-top: 3rem;
+}
+
+.appraisal-category {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+.appraisal-category label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.appraisal-category select {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    appearance: none; /* removes default browser styling */
+    background-color: white;
+}
+#results {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+ }
+ 
+ th, td {
+    padding: 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+ }
+ 
+ th {
+    background-color: #4CAF50;
+    color: white;
+ }
+ 
+ tr:nth-child(even) {
+    background-color: #f2f2f2;
+ }
+ 
+ tr:hover {
+    background-color: #ddd;
+ }
+ .characteristics {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+}
+
+.characteristics h4 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.characteristics ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.characteristics li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.characteristics li:before {
+    content: "•";
+    color: #4CAF50;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.characteristics strong {
+    color: #2196F3;
+}
+.tech-parameters {
+    background-color: #e8f5fe;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.tech-parameters h4 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
+
+.tech-parameters ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.tech-parameters li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.tech-parameters li:before {
+    content: "→";
+    color: #0066cc;
+    position: absolute;
+    left: 0;
+}
+
+.tech-parameters strong {
+    color: #004d99;
+}
+.equity-parameters {
+    background-color: #fff5f5;
+    padding: 25px;
+    border-radius: 8px;
+    margin: 20px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.equity-parameters h4 {
+    color: #d23669;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #d23669;
+    padding-bottom: 10px;
+}
+
+.equity-parameters ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.equity-parameters li {
+    margin-bottom: 15px;
+    padding-left: 30px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.equity-parameters li:before {
+    content: "♦";
+    color: #d23669;
+    position: absolute;
+    left: 0;
+}
+
+.equity-parameters strong {
+    color: #a61e4d;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.equity-parameters li:hover {
+    background-color: rgba(210, 54, 105, 0.05);
+    border-radius: 4px;
+    padding: 5px 30px;
+    margin-left: -10px;
+    transition: all 0.3s ease;
+}
+.lifelong-parameters {
+    background-color: #f0f7f4;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.lifelong-parameters h4 {
+    color: #2e7d32;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #2e7d32;
+    padding-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.lifelong-parameters ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.lifelong-parameters li {
+    margin-bottom: 12px;
+    padding: 10px 15px 10px 30px;
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.lifelong-parameters li:before {
+    content: "🎓";
+    position: absolute;
+    left: 8px;
+}
+
+.lifelong-parameters li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.lifelong-parameters strong {
+    color: #1b5e20;
+    display: block;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .lifelong-parameters ul {
+        grid-template-columns: 1fr;
+    }
+}
+.main-header {
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-container h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: #ecf0f1;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-top: 0.3rem;
+}
+
+.primary-nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.primary-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.primary-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.contact-btn {
+    background-color: #e74c3c;
+    padding: 0.5rem 1.5rem !important;
+}
+
+.contact-btn:hover {
+    background-color: #c0392b !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .primary-nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+
+    .primary-nav a {
+        display: block;
+        padding: 0.8rem;
+    }
+}
+
+/* Animation for the header on scroll */
+@keyframes headerShrink {
+    from {
+        padding: 1rem 0;
+    }
+    to {
+        padding: 0.5rem 0;
+    }
+}
+
+.header-scrolled {
+    animation: headerShrink 0.3s forwards;
+    background: rgba(44, 62, 80, 0.95);
+}
+.future-trends-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.future-trends-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.future-trends-section h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    margin: 1rem auto;
+    border-radius: 2px;
+}
+
+.trends-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.trend-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.trend-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.trend-content {
+    padding: 1.5rem;
+}
+
+.trend-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.trend-card h3 {
+    color: #2c3e50;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.trend-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.trend-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.trend-card:hover .trend-image {
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .future-trends-section {
+        padding: 2rem 1rem;
+    }
+
+    .future-trends-section h2 {
+        font-size: 2rem;
+    }
+
+    .trends-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+
+/* Animation for cards on scroll */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.trend-card {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.trend-card:nth-child(2) { animation-delay: 0.2s; }
+.trend-card:nth-child(3) { animation-delay: 0.4s; }
+.trend-card:nth-child(4) { animation-delay: 0.6s; }
+.trend-card:nth-child(5) { animation-delay: 0.8s; }
+.trend-card:nth-child(6) { animation-delay: 1s; }
+.appraisal-section {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%);
+}
+
+.appraisal-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.appraisal-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.appraisal-header h2 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+.appraisal-intro {
+    color: #666;
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.appraisal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.appraisal-category {
+    background: white;
+    border-radius: 15px;
+    padding: 1.5rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.appraisal-category:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.category-icon {
+    font-size: 1.8rem;
+    margin-right: 1rem;
+}
+
+.category-header h3 {
+    color: #2c3e50;
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.category-content label {
+    display: block;
+    color: #666;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.custom-select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    color: #333;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.custom-select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-actions {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.calculate-btn {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+    color: white;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.calculate-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.results-container {
+    margin-top: 2rem;
+    padding: 2rem;
+    border-radius: 15px;
+    background: white;
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .appraisal-section {
+        padding: 2rem 1rem;
+    }
+
+    .appraisal-header h2 {
+        font-size: 2rem;
+    }
+
+    .appraisal-category {
+        padding: 1rem;
+    }
+}
+
+/* Animation for scroll reveal */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.appraisal-category {
+    animation: fadeInUp 0.6s ease forwards;
+    opacity: 0;
+}
+
+.appraisal-category:nth-child(2) { animation-delay: 0.2s; }
+.appraisal-category:nth-child(3) { animation-delay: 0.4s; }
+.appraisal-category:nth-child(4) { animation-delay: 0.6s; }
+.appraisal-category:nth-child(5) { animation-delay: 0.8s; }
